@@ -32,8 +32,33 @@
               "icon": "lucide-file",
               "title": "BILD_5_Lectures"
             }
+          },
+          {
+            "id": "618b0e3487505d9d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -281,12 +306,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c3afd2ee6a894150",
+  "active": "618b0e3487505d9d",
   "lastOpenFiles": [
     "BILD_5_Lectures.md",
+    "README.md",
     "BILD_5_LE_22.md",
     "LICENSE",
-    "README.md",
     "BILD_5/Lectures/BILD_5_LE_26.md",
     "BILD_5/Lectures/BILD_5_LE_27.md",
     "BILD_5/Lectures/BILD_5_Lectures.md",

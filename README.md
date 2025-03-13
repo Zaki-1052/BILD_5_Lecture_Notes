@@ -32,3 +32,43 @@
 28. [Lecture 28 Notes](BILD_5_LE_28.md)
 29. [Lecture 29 Notes](BILD_5_LE_29.md)
 30. [Lecture 30 Notes](BILD_5_LE_30.md)
+
+## Instructions
+### 1. Clone This Repository
+#### Using GitHub Desktop:
+1. Install [GitHub Desktop](https://desktop.github.com/)
+2. Click the green "Code" button above
+3. Select "Open with GitHub Desktop"
+4. Choose where to save the repository locally
+5. Click "Clone"
+#### Using Command Line:
+```bash
+git clone https://github.com/Zaki-1052/BILD_5_Lecture_Notes
+```
+### 2. Download and Install Obsidian
+- Visit the official Obsidian.md website ([https://obsidian.md/](https://obsidian.md/)) and download the version suitable for your operating system (Windows, macOS, or Linux).
+- Follow the provided instructions to install Obsidian on your device. 
+	- The installation process is straightforward and should only take a few minutes.
+### 3. Open the Notes as a Vault
+1. Open Obsidian
+2. Click "Open another vault" (folder icon)
+3. Select "Open folder as vault"
+4. Navigate to where you cloned the repository
+5. Select the repository folder
+6. Click "Open"
+7. When prompted, click "Trust" to enable the community plugins included in this vault
+### 4. Understanding the Notes
+#### Note Structure
+- Each note begins with a YAML header containing metadata such as:
+    - Lecture number
+    - Date created
+    - Course information
+- You can view this information organized in tables using the Dataview plugin
+#### Navigation
+- Use the file explorer (left sidebar) to browse through folders
+- Click the search icon (magnifying glass) to search all notes
+	- The "Omnisearch" plugin is best for searching specific terms.
+- Use the graph view to see connections between notes
+- Tags and links help navigate related content
+### 5. Good luck on the final!
+---

@@ -1,0 +1,317 @@
+{
+  "main": {
+    "id": "924352a99691ed25",
+    "type": "split",
+    "children": [
+      {
+        "id": "009cebbab95ea806",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c3afd2ee6a894150",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BILD_5_Lectures.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "BILD_5_Lectures"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "63bd59754c8016e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "897ad205a98b4c29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ffc5274cc4872e5d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e63083e88772ee47",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "longdat",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "eba090c1bb00d5a7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7e0544bba040aaec",
+    "type": "split",
+    "children": [
+      {
+        "id": "b69db521d93a2b7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8089e446a80709df",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CSE_ToC.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from CSE_ToC"
+            }
+          },
+          {
+            "id": "4470551947c47e5d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "07e8109b4481caec",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CSE_8A/Lectures/CSE_8A_LE_18.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of CSE_8A_LE_18"
+            }
+          },
+          {
+            "id": "49f2ea4baf61a4a8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "2cac32cb11ac2fbe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSE_ToC.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CSE_ToC"
+            }
+          },
+          {
+            "id": "b801bd5ee4b2491b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "BILD_5/Lectures/BILD_5_LE_11.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for BILD_5_LE_11"
+            }
+          },
+          {
+            "id": "65b2e9537c45ceab",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "bbf9e22cc650741e",
+            "type": "leaf",
+            "state": {
+              "type": "code-execute-manage-executors",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "6e3ea4ab1c908890",
+            "type": "leaf",
+            "state": {
+              "type": "r-environment-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "b501ac60d9d1b0a6",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "BILD_5/Lectures/BILD_5_LE_11.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for BILD_5_LE_11"
+            }
+          },
+          {
+            "id": "2afb771ce1bd67fb",
+            "type": "leaf",
+            "state": {
+              "type": "r-environment-view",
+              "state": {},
+              "icon": "table",
+              "title": "R Environment"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 358.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "random-note:Open random note": false,
+      "publish:Publish changes...": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "markdown-importer:Open format converter": false,
+      "obsidian-git:Open Git source control": false,
+      "terminal:Open terminal": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "omnisearch:Omnisearch": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "c3afd2ee6a894150",
+  "lastOpenFiles": [
+    "BILD_5/Lectures/BILD_5_LE_26.md",
+    "BILD_5/Lectures/BILD_5_LE_27.md",
+    "BILD_5/Lectures/BILD_5_Lectures.md",
+    "CSE_ToC.md",
+    "BILD_5/Lectures/attachments/scatterPlot.png",
+    "BILD_5/Lectures/attachments/sampleSize.png",
+    "BILD_5/Lectures/attachments/scatterPlot.png.sb-b3c9e5d7-KEIXbp",
+    "BILD_5/Lectures/attachments/boxPlot.png",
+    "BILD_5/Lectures/attachments/boxJFK.png",
+    "BILD_5/Lectures/attachments/PCABoardGraph.jpg",
+    "BILD_5/Lectures/attachments/pairedExperiment.png",
+    "BILD_5/Lectures/attachments/PCABoardGraph.jpg.sb-b3c9e5d7-VqW0vV",
+    "BILD_5/Lectures/attachments/badPValues2.png",
+    "BILD_5/Lectures/attachments/badPValues1.png",
+    "BILD_5/Lectures/attachments/badPValueGraph.png",
+    "BILD_5/Lectures/attachments/aprilTempHistogram.png",
+    "BILD_5/discussions/Week_10/Zakir_Alibhai_Term_Project_WI25.html",
+    "BILD_5/discussions/Week_10/Zakir_Alibhai_Term_Project_WI25.knit.md",
+    "BILD_5/Lectures/BILD_5_LE_2.md",
+    "BILD_5/Lectures/BILD_5_LE_1.md",
+    "BILD_5/Lectures/BILD_5_LE_12.md",
+    "BILD_5/Lectures/BILD_5_LE_11.md",
+    "BILD_5/Lectures/BILD_5_LE_10.md",
+    "BILD_5/Lectures/BILD_5_LE_9.md",
+    "BILD_5/Lectures/BILD_5_LE_8.md",
+    "BILD_5/Lectures/BILD_5_LE_7.md",
+    "BILD_5/Lectures/BILD_5_LE_6.md",
+    "BILD_5/Lectures/BILD_5_LE_5.md",
+    "BILD_5/Lectures/BILD_5_LE_4.md",
+    "BILD_5/Lectures/BILD_5_LE_3.md",
+    "BILD_5/Lectures/BILD_5_LE_18.md",
+    "BILD_5/Lectures/BILD_5_LE_21.md",
+    "BILD_5/Lectures/BILD_5_LE_24.md",
+    "BILD_5/Lectures/BILD_5_LE_25.md",
+    "BILD_5/Lectures/BILD_5_LE_23.md",
+    "BILD_5/Lectures/BILD_5_LE_22.md",
+    "BILD_5/discussions/Week_10/zalibhai.csv",
+    "BILD_5/discussions/Week_9/DONE_Zakir_Alibhai_Section_Assignment_9.knit.md",
+    "BILD_5/discussions/Week_9/DONE_Zakir_Alibhai_Section_Assignment_9_files/figure-html",
+    "BILD_5/discussions/Week_9/DONE_Zakir_Alibhai_Section_Assignment_9_files",
+    "BILD_5/discussions/Week_10/Week_10.Rproj",
+    "BILD_5/discussions/Week_10/Final BILD 5 Project.md",
+    "BILD_5/discussions/Week_10/Zakir_Alibhai_Term_Project_WI25.Rmd",
+    "BILD_5/Lectures/BILD_5_LE_19.md",
+    "BILD_5/discussions/Week_10/Term_Project_Final_Template_WI25.Rmd",
+    "BILD_5/discussions/Week_10"
+  ]
+}

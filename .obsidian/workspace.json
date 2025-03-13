@@ -264,25 +264,29 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "random-note:Open random note": false,
-      "publish:Publish changes...": false,
+      "omnisearch:Omnisearch": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
       "markdown-importer:Open format converter": false,
-      "obsidian-git:Open Git source control": false,
       "terminal:Open terminal": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "omnisearch:Omnisearch": false,
+      "random-note:Open random note": false,
+      "publish:Publish changes...": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "16b51f1ca5fc5c7d",
+  "active": "c3afd2ee6a894150",
   "lastOpenFiles": [
+    "BILD_5_Lectures.md",
+    "BILD_5_LE_22.md",
+    "LICENSE",
+    "README.md",
     "BILD_5/Lectures/BILD_5_LE_26.md",
     "BILD_5/Lectures/BILD_5_LE_27.md",
     "BILD_5/Lectures/BILD_5_Lectures.md",
@@ -320,14 +324,10 @@
     "BILD_5/Lectures/BILD_5_LE_23.md",
     "BILD_5/Lectures/BILD_5_LE_22.md",
     "BILD_5/discussions/Week_10/zalibhai.csv",
-    "BILD_5/discussions/Week_9/DONE_Zakir_Alibhai_Section_Assignment_9.knit.md",
     "BILD_5/discussions/Week_9/DONE_Zakir_Alibhai_Section_Assignment_9_files/figure-html",
     "BILD_5/discussions/Week_9/DONE_Zakir_Alibhai_Section_Assignment_9_files",
     "BILD_5/discussions/Week_10/Week_10.Rproj",
-    "BILD_5/discussions/Week_10/Final BILD 5 Project.md",
     "BILD_5/discussions/Week_10/Zakir_Alibhai_Term_Project_WI25.Rmd",
-    "BILD_5/Lectures/BILD_5_LE_19.md",
-    "BILD_5/discussions/Week_10/Term_Project_Final_Template_WI25.Rmd",
-    "BILD_5/discussions/Week_10"
+    "BILD_5/discussions/Week_10/Term_Project_Final_Template_WI25.Rmd"
   ]
 }

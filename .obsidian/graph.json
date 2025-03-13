@@ -3,50 +3,22 @@
   "search": "",
   "showTags": false,
   "showAttachments": true,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
-    {
-      "query": "path:CSE_8A/Lectures  ",
-      "color": {
-        "a": 1,
-        "rgb": 14701138
-      }
-    },
-    {
-      "query": "path:CSE_8A/Labs  ",
-      "color": {
-        "a": 1,
-        "rgb": 14725458
-      }
-    },
-    {
-      "query": "path:CSE_8A/PAs  ",
-      "color": {
-        "a": 1,
-        "rgb": 11657298
-      }
-    },
-    {
-      "query": "path:CSE_8A/Projects  ",
-      "color": {
-        "a": 1,
-        "rgb": 5431378
-      }
-    },
-    {
-      "query": "path:CSE_87_SE  ",
-      "color": {
-        "a": 1,
-        "rgb": 5431473
-      }
-    },
     {
       "query": "path:/",
       "color": {
         "a": 1,
         "rgb": 7935
+      }
+    },
+    {
+      "query": "path:attachments/",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
       }
     }
   ],
@@ -60,6 +32,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.5077727909037248,
+  "scale": 0.6177036969930572,
   "close": true
 }

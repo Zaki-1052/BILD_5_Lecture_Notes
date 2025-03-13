@@ -174,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BILD_5/Lectures/BILD_5_LE_11.md",
+                "file": "BILD_5_Lectures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +184,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for BILD_5_LE_11"
+              "title": "Backlinks for BILD_5_Lectures"
             }
           },
           {
@@ -223,10 +223,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "BILD_5/Lectures/BILD_5_LE_11.md"
+                "file": "BILD_5_Lectures.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for BILD_5_LE_11"
+              "title": "File properties for BILD_5_Lectures"
             }
           },
           {
@@ -241,6 +241,22 @@
           }
         ],
         "currentTab": 6
+      },
+      {
+        "id": "479aed79e72a0860",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16b51f1ca5fc5c7d",
+            "type": "leaf",
+            "state": {
+              "type": "r-help-view",
+              "state": {},
+              "icon": "info",
+              "title": "R Help"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -265,7 +281,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c3afd2ee6a894150",
+  "active": "16b51f1ca5fc5c7d",
   "lastOpenFiles": [
     "BILD_5/Lectures/BILD_5_LE_26.md",
     "BILD_5/Lectures/BILD_5_LE_27.md",

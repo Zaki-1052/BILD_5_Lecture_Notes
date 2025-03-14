@@ -32,33 +32,8 @@
               "icon": "lucide-file",
               "title": "BILD_5_Lectures"
             }
-          },
-          {
-            "id": "618b0e3487505d9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BILD_5_LE_28.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "BILD_5_LE_28"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -289,8 +264,9 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "618b0e3487505d9d",
+  "active": "65b2e9537c45ceab",
   "lastOpenFiles": [
+    "attachments/posteriorUnderstanding.png",
     "README.md",
     "attachments/bayesianAnalysis.png",
     "R_Work/KSTest.R",

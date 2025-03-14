@@ -51,6 +51,7 @@ date: 3/14
 - Your “trustworthy” friend swears they saw it happen one time at like burning man or something, dude. 
 	- How does your probability estimate change?
 - What if multiple independent news outlets cover the story with video evidence and sworn testimony and you look at a calendar and it isn’t April 1st?
+![[posteriorUnderstanding.png]]
 ### Modifying our Prior understanding
 - #### Bayes Theorem
 $$P(A|B) = \frac{P(A) \times P(B|A)}{P(B)}$$

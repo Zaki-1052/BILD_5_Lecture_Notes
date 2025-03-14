@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "BILD_5_LE_28.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -54,7 +54,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "BILD_5_LE_28"
             }
           }
         ],
@@ -266,22 +266,6 @@
           }
         ],
         "currentTab": 6
-      },
-      {
-        "id": "479aed79e72a0860",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "16b51f1ca5fc5c7d",
-            "type": "leaf",
-            "state": {
-              "type": "r-help-view",
-              "state": {},
-              "icon": "info",
-              "title": "R Help"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
@@ -302,33 +286,38 @@
       "terminal:Open terminal": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "random-note:Open random note": false,
-      "publish:Publish changes...": false,
-      "templater-obsidian:Templater": false
+      "publish:Publish changes...": false
     }
   },
   "active": "618b0e3487505d9d",
   "lastOpenFiles": [
-    "BILD_5_Lectures.md",
     "README.md",
+    "attachments/bayesianAnalysis.png",
+    "R_Work/KSTest.R",
+    "R_Work/Week2_Day2.R",
+    "R_Work/NormalDistribution.R",
+    "R_Work/meansData.png",
+    "R_Work/meanData.png",
+    "R_Work/HistogramX.png",
+    "R_Work/ANOVA_Day-1.R",
+    "R_Work/Week6Lect.csv",
+    "R_Work/anovaBoxPlot.png",
+    "R_Work/allmeansHistograms2.png",
+    "R_Work/line_plot_2.png",
+    "R_Work/box_plot.png",
+    "R_Work/incorrect_histogram.png",
+    "R_Work/line_plot_1.png",
+    "R_Work/The Normal pt1.R",
+    "R_Work/Week2_Day1.r",
+    "R_Work/T_test-Day3.R",
+    "R_Work/ANOVA_Day-2.R",
+    "R_Work/randomSamplingHistograms.R",
+    "BILD_5_Lectures.md",
     "BILD_5_LE_22.md",
-    "LICENSE",
     "BILD_5/Lectures/BILD_5_LE_26.md",
     "BILD_5/Lectures/BILD_5_LE_27.md",
     "BILD_5/Lectures/BILD_5_Lectures.md",
     "CSE_ToC.md",
-    "BILD_5/Lectures/attachments/scatterPlot.png",
-    "BILD_5/Lectures/attachments/sampleSize.png",
-    "BILD_5/Lectures/attachments/scatterPlot.png.sb-b3c9e5d7-KEIXbp",
-    "BILD_5/Lectures/attachments/boxPlot.png",
-    "BILD_5/Lectures/attachments/boxJFK.png",
-    "BILD_5/Lectures/attachments/PCABoardGraph.jpg",
-    "BILD_5/Lectures/attachments/pairedExperiment.png",
-    "BILD_5/Lectures/attachments/PCABoardGraph.jpg.sb-b3c9e5d7-VqW0vV",
-    "BILD_5/Lectures/attachments/badPValues2.png",
-    "BILD_5/Lectures/attachments/badPValues1.png",
-    "BILD_5/Lectures/attachments/badPValueGraph.png",
-    "BILD_5/Lectures/attachments/aprilTempHistogram.png",
-    "BILD_5/discussions/Week_10/Zakir_Alibhai_Term_Project_WI25.html",
     "BILD_5/discussions/Week_10/Zakir_Alibhai_Term_Project_WI25.knit.md",
     "BILD_5/Lectures/BILD_5_LE_2.md",
     "BILD_5/Lectures/BILD_5_LE_1.md",
@@ -346,13 +335,6 @@
     "BILD_5/Lectures/BILD_5_LE_21.md",
     "BILD_5/Lectures/BILD_5_LE_24.md",
     "BILD_5/Lectures/BILD_5_LE_25.md",
-    "BILD_5/Lectures/BILD_5_LE_23.md",
-    "BILD_5/Lectures/BILD_5_LE_22.md",
-    "BILD_5/discussions/Week_10/zalibhai.csv",
-    "BILD_5/discussions/Week_9/DONE_Zakir_Alibhai_Section_Assignment_9_files/figure-html",
-    "BILD_5/discussions/Week_9/DONE_Zakir_Alibhai_Section_Assignment_9_files",
-    "BILD_5/discussions/Week_10/Week_10.Rproj",
-    "BILD_5/discussions/Week_10/Zakir_Alibhai_Term_Project_WI25.Rmd",
-    "BILD_5/discussions/Week_10/Term_Project_Final_Template_WI25.Rmd"
+    "BILD_5/Lectures/BILD_5_LE_23.md"
   ]
 }

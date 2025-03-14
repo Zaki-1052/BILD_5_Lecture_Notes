@@ -32,8 +32,33 @@
               "icon": "lucide-file",
               "title": "BILD_5_Lectures"
             }
+          },
+          {
+            "id": "7a9ea28559faa634",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BILD_5_LE_28.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "BILD_5_LE_28"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -264,8 +289,10 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "65b2e9537c45ceab",
+  "active": "7a9ea28559faa634",
   "lastOpenFiles": [
+    "BILD_5_Lectures.md",
+    "BILD_5_LE_28.md",
     "attachments/posteriorUnderstanding.png",
     "README.md",
     "attachments/bayesianAnalysis.png",
@@ -282,13 +309,11 @@
     "R_Work/line_plot_2.png",
     "R_Work/box_plot.png",
     "R_Work/incorrect_histogram.png",
-    "R_Work/line_plot_1.png",
     "R_Work/The Normal pt1.R",
     "R_Work/Week2_Day1.r",
     "R_Work/T_test-Day3.R",
     "R_Work/ANOVA_Day-2.R",
     "R_Work/randomSamplingHistograms.R",
-    "BILD_5_Lectures.md",
     "BILD_5_LE_22.md",
     "BILD_5/Lectures/BILD_5_LE_26.md",
     "BILD_5/Lectures/BILD_5_LE_27.md",

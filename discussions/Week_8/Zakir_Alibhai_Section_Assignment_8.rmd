@@ -1,0 +1,238 @@
+---
+title: "Section Assignment 8"
+date: "2/26/25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(eval = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+
+
+***
+Things-to-Note: -
+1) Don't rename external files or edit them in any way
+2) Don't change the variable names
+3) Don't destroy or overwrite any variables 
+4) Don't use global path in your script. Instead use "setwd()" interactively in the console, but don't include this code in your submission
+
+If you don't take above instructions into account it might effect your grades.
+***
+Your Information: -
+```{r}
+firstname <- "Zakir"   # example: "Liam"
+lastname <- "Alibhai"  # example: "Mueller"
+username <- "zalibhai"  #example: "lomueller"   Do not include the "@ucsd.edu" part!
+```
+
+
+***
+
+
+***
+Please Read!  
+
+
+Does learning a second language change brain structure? Machelli et al.(2004)*  tested 22 native Italian speakers who had learned English as a second language. Proficiency in reading, writing, and speech were assessed by a proficiency score. Gray matter density was measured in the left inferior parietal region of the brain using a neuroimaging technique, as mm^3 of gray matter per voxel.
+
+
+* Machelli et al.(2004) Structural plasticity in the bilingual brain. Nature 431:757 https://doi.org/10.1038/431757a
+
+
+You will find the data from their study in the "Week8Brains.csv" file on Canvas.
+
+
+Since we have already downloaded and installed the necessary packages, this week, simply load the tidyverse functions into your working library:
+```{r,echo=FALSE}
+library(tidyverse)
+```
+This line of code above will need to be run each time you start a new R session.
+
+  ***  
+
+Just like last week, this week you will practice answering a research question step by step. Think of it as practice for your term project!
+
+Step 1. Import your data, and check the assumption of normality.
+
+Question 1: Import the data you downloaded from canvas this week (File name should be: "Week8Brains.csv").
+```{r}
+BrainData<-read.csv(file = "Week8Brains.csv")
+head(BrainData)  
+```
+
+```{r}
+### This chunk of code is for grading purposes. 
+### Don't change/delete this chunk of code. 
+q1 <- BrainData
+```
+
+  
+  ***
+    
+  
+Question 2-3: Use visualizations and tests to determine that the data are normally distributed. Yes, you will have to do this twice. Please make your histograms in ggplot
+  
+```{r}
+#visualize the second language scores data here.
+Histogram1<-ggplot(data = BrainData, mapping = aes(x=Second.language.proficiency)) + 
+  geom_histogram(binwidth = 1)
+Histogram1
+```
+
+```{r}
+#Test for normality of the second language scores in this code box.
+ks.test(BrainData$Second.language.proficiency,"pnorm",mean(BrainData$Second.language.proficiency),sd(BrainData$Second.language.proficiency))
+```
+
+```{r}
+#visualize the gray matter density data here.
+Histogram2<-ggplot(data = BrainData, mapping = aes(x=Gray.matter.density)) + 
+  geom_histogram(binwidth = 0.06)
+Histogram2
+```
+
+```{r}
+#Test for normality of the gray matter density data in this code box.
+ks.test(BrainData$Gray.matter.density,"pnorm",mean(BrainData$Gray.matter.density),sd(BrainData$Gray.matter.density))
+```
+
+
+```{r}
+### This chunk of code is for grading purposes. 
+### Don't change/delete this chunk of code. 
+q2 <- Histogram1
+q3 <- Histogram2
+```
+
+  ***
+    
+
+
+Question 4: Are the second language scores data normally distributed? Answer with a simple TURE or FLASE, no other text required.
+
+```{r}
+q4 <- "TRUE"
+```
+
+
+Question 5: Are the gray matter density data normally distributed? Answer with a simple TURE or FLASE, no other text required.
+
+```{r}
+q5 <- "TRUE"
+```
+
+
+  ***
+    
+
+Step 2. Identify your null and alternate hypotheses, generate the correct linear model, test the null hypothesis.
+
+Research question: Does learning a second language change brain structure?
+
+Question 6-7: What is the null and alternate hypothesis that answer the research question? To prepare you for the final, think about how you could answer this as an equation.
+  
+```{r}
+NullHypothesis<-"There is no change or difference in brain structure between individuals who learn a second language and those who do not."
+print(NullHypothesis)
+  
+AlternateHypothesis<-"There is a change or difference in brain structure between individuals who learn a second language and those who do not."
+print(AlternateHypothesis)
+```
+
+```{r}
+### This chunk of code is for grading purposes. 
+### Don't change/delete this chunk of code. 
+q6 <- NullHypothesis
+q7 <- AlternateHypothesis
+```
+  
+
+  ***
+    
+
+  
+Question 8: Generate a linear model to model the relationship in the data. Consult the lecture notes for code.
+```{r}
+#Build your linear model in this code block
+q8 <- lm(Gray.matter.density ~ Second.language.proficiency, data = BrainData)
+q8
+```
+
+Question 9: Now that you have the slope and intercept estimates for your model, write out the linear equation that predicts Y. Use the column names for X and Y
+
+```{r}
+q9 <- "Gray.matter.density = 0.03024(Second.language.proficiency) - 0.07214"
+```
+  
+  ***
+    
+
+Question 10: Perform a null hypothesis test of the model you generated. Try using summary() instead of anova() this week.
+```{r}
+#test your linear model in this code block
+q10 <-summary(q8)
+q10
+```
+
+
+Question 11-14: Extract the important information about your model. Type in numbers: the slope, the standard error of the slope, the p value that tests the null, and the r squared value.
+  
+```{r}
+q11 <-  0.030235  #Slope value before the hashtag
+q12 <-  0.004749  #Standard error of the slope before the hashtag
+q13 <-  3.26e-06  #Correct p value before the hashtag
+q14 <-  0.6696  #R^2 before the hashtag
+```
+  
+  ***
+    
+ 
+
+Step 3. Graphical representation of the model.
+  
+Question 15: Generate a figure representing the data, your model and the error around your model. Use my example as a template. Drawing a line of best fit can be done a bunch of ways in ggplot, but I recommend looking into how to use the `geom_smooth()` function as it can also create the shaded error on the graph, which is required to get full credit. Don't worry about matching the colors to the example, in fact I encourage you to look up all the different color options in R and find a color scheme you like! Some hints to help you: 1) The size of the points is larger than the default. 2) The axis text for both x and y is increased. 3) The x and y axis need to be relabeled.
+
+```{r}
+plot1<-ggplot(data=BrainData,mapping=aes(x=Second.language.proficiency,y=Gray.matter.density))+
+  theme_classic() +
+  theme(axis.text=element_text(size=14)) +
+  xlab("Proficiency in second language") +
+  ylab("Gray-matter density") +
+  geom_point(size=2) +
+  geom_smooth(method = "lm",color="navy",fill="blue")
+plot1  
+```
+
+```{r}
+### This chunk of code is for grading purposes. 
+### Don't change/delete this chunk of code. 
+q15 <- plot1
+```
+
+    
+  
+Part 2: A question on correlation:
+In the scenario above, the scientists were confident that they had an independent and dependent variable. What if we did not share that opinion? Reanalyze the brain data using a correlative model instead.
+
+We will assume the data are normally distributed, you already tested this in Q2.
+
+
+Question 16: Test the null hypothesis of a correlation. Consult the lecture notes for code associated with performing correlation hypothesis testing in R.
+```{r}
+q16<-cor.test(BrainData$Second.language.proficiency,BrainData$Gray.matter.density)
+q16
+```
+
+  ***
+    
+
+
+Once you are done, make sure there are no errors. Save the .rmd file with your name and the week number in the file name: 
+
+  (for example: "Liam_Mueller_Section_Assignment_8.rmd").  
+  
+Then upload this rmd file to canvas under the Week 8 Section Assignemnt before the deadline. 
+

@@ -1,0 +1,301 @@
+---
+title: "The Effect of Cold Showering on Immune Response"
+author: "Zakir Alibhai"
+date: "3/12/25"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(eval = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+```{r main instructions, include=FALSE}
+# Final Term Project Write-up Instructions
+
+#Please read the following, and be sure to follow all instructions. There is no resubmit opportunity for this assignment:
+
+#1.  Each section will have headings and 1-2 code blocks. Do not edit the headings for each section (anything with one or more #'s at the start of the line. The first code block will be instructions for that section and will not be knit into the final document. The second code block (if present) will be for you to include your own code needed to complete the section. It will be knitted and presented in the final document. 
+
+#2.  Examine all the feedback you got on your proposal so far. Do you need to modify your question, prediction, hypothesis, experimental design, or analytical plan? This term paper will be graded on its own merit, separate from how you did on any of the checkpoints. You are not held to the decisions you made on previous checkpoints. You are only required to use the data you were given and the same primary statistical test that you included on the survey generating your simulated data.
+
+#3. Make any citations as needed, including the original paper, but if you need additional evidence, include it. You must include inline citations (Author, year), as well as a bibliography at the end. This includes any URLs where you copied code. You do not need to cite any course materials. Remember, copying code is encouraged. It's your words that need to be original.
+
+#4. Feel free to copy and paste anything you'd like from your previous checkpoint assignments.
+
+#5. You are welcome to use ChatGPT or any generative AI to help generate your code. However you MUST properly cite all instances where it was used and include an annotation stating how you used it. This should be brief and you are ultimate responsible for everything you include, regardless of its origin. Un-annotated, un-sited code using functions from outside of the class can be docked points.
+
+#6. You will often be instructed to write text in specific places inside square brackets. Delete the square brackets and all instructional text contained within before you submit.
+
+#6.  Knit your .RMD document as an html and submit the html to Canvas. It is due Sunday the 16th at 11:59pm. Be aware that late penalties will be assessed.
+```
+
+```{r Section1 instructions, include=FALSE}
+#This section states which of the three class papers you chose to base your study on. #Only remove text where it instructs to. 
+
+```
+
+# [Term Project Description]{.underline}
+
+My project builds upon the study referenced below. I have proposed a potential follow-up experiment to extend the study's findings. The project utilizes simulated data, structured and analyzed as if collected from a real experiment. While the outcomes do not provide scientific evidence, they showcase my skills in formulating and addressing relevant biological questions through statistics, experimental design, and programming.
+
+### Article citation:
+
+Buijze GA, Sierevelt IN, van der Heijden BCJM, Dijkgraaf MG, Frings-Dresen MHW (2016). The Effect of Cold Showering on Health and Work: A Randomized Controlled Trial. PLoS ONE 11(9): e0161749. doi:10.1371/journal.pone.0161749
+
+### Brief statement on the findings from the original article that led to your followup experiemnt:
+
+The original article concluded basically that cold showers reduce the number of days of work participants miss from feeling sick, but not the actual number of days they get ill. This led me to question whether there was a mental component to cold showers that strengthened or generally affected the immune system. The authors of the experiment suggested a follow-up using an fMRI to see if there was a “neurobiologic immunostimulatory effect”; in other words, whether immune regions of the brain were being activated due to the effects of cold showering.
+
+------------------------------------------------------------------------
+
+```{r Section2 instructions, include=FALSE}
+#Below the appropriate headings, write in your responses.
+
+#The Question: Write out your overall biological research question for your project in a single sentence.
+
+#Disclaimer: Do not edit this line.
+
+#Rationale and Background: Include here a short paragraph (~300-500 words) providing basic, relevant background and your rationale for asking the question. Pretend your audience is a UCSD undergraduate first-year biology major.
+
+```
+
+# [The Question]{.underline}
+
+Do colder showers activate parts of the brain responsible for immune responses differently than hotter showers?
+
+#### Disclaimer: This project analyzes simulated data. The questions and hypotheses are real, but the results and conclusions are not.
+
+### *Rationale and Background:*
+
+In the original study, it was found that cold showers led to a 29% reduction in sickness absence from work, but that there was no significant difference in actual illness days. This follow-up study would see if there is immune system activation and a physiological or neurological response to the cold showers, which the study mentioned happens within the first 30 seconds to cold exposure. The researchers thought that this may have been initiated by “neurogenic pathways”, or nerve fibers that carry sensory information from the brain to the rest of the nervous system (Andrușca, 2023). Since we know that cold showers somewhat impact people’s behavior when ill, but not their actual susceptibility to illness, we want to know the mechanism by which cold shower exposure strengthens the immune system, if at all. This might be by the neurobiological pathways where immune regions of the brain are activated, or stress hormones could be triggered by the cold. 
+
+There is also the concept of hormesis, which says that there can be beneficial effects to mild stressors (much like the function of a vaccine); this might mean that putting the cells under stress from the cold water affects blood flow or signalling pathways, which in turn activates/creates a stronger immune response that can better fight off viruses (Mattson, 2008). This wouldn’t prevent the body from getting sick, but it might reduce the symptoms (thus why participants in the previous study were absent from work less) and better prepare the immune system to fight off a cold. Lastly, it could be that participants were used to feeling miserable from a cold shower in the morning, and did not feel as affected by illness. 
+
+My rationale for the question would be that there is in fact an underlying biological mechanism that can be seen through examining the activation of immune regions of the brain under an fMRI. This might be in places like the hypothalamus, which is part of the parasympathetic nervous system (for sensory signals), regulates body temperature, and plays a role in regulating immune responses (Soto-Tonoco, 2016). My goal with the question would be to see if this difference in immune response is what prevents participants taking cold showers from feeling the effects of illness as acutely as those who take warm or moderate showers.
+
+------------------------------------------------------------------------
+
+```{r Section3 instructions, include=FALSE}
+#Fill out the following sections. Each should only be a single sentence.
+
+
+```
+
+# [Hypotheses]{.underline}
+
+### *A Statistical Null Hypothesis:*
+
+Colder showers will not activate immune responses in the brain differently than warmer showers.
+
+### *A Statistical Alternative Hypothesis:*
+
+Colder showers will activate immune responses in the brain differently than warmer showers.
+
+
+
+------------------------------------------------------------------------
+
+```{r Section4 instructions, include=FALSE}
+
+#You will also use this page to describe your overall experimental design. Each should be written in paragraph form and can be up to 300 words max. If appropriate, it should cover each of the following issues: randomization, controls (positive and/or negative), blinding. Make sure that this description matches the data you will be analyzing, not a bigger experiment with more variables that you will not have data for.
+
+#Explanatory and Response Variables - explicitly and simply state your explanatory/independent/x variable and your response/dependent/y variable.
+
+#Sample size - include a description of your sample size and a justification for your choice.
+
+```
+
+# [Experimental Design]{.underline}
+
+My experimental design will investigate how different shower temperatures on a continuum from 10-40 degrees Celsius will affect brain activation in regions associated with immune response. I will find this by using the BOLD signal from an fMRI to measure how much neurologic immune activity is occurring in A.U. (Arbitrary Units) at regions like the hypothalamus. I will recruit 60-70 healthy adults from ages 25-45, with the assumption that I will retain 60 as a representative sample size of the average population. They will be randomly selected from a pool of 100 volunteers, and screened for any immune diseases or cold sensitivity that might affect the results, and people who already take cold showers to eliminate bias. Each participant will be assigned a random temperature to shower at, distributed along a normal curve by an R program. 
+
+The higher temperature range will serve as the negative control, where those who shower at around 35 degrees (skin temperature) will be the reference point. A positive control is not possible. I will have participants take standardized showers for the same length of time (5 minutes), and with the same water flow, room temperature, time of day (noon), etc. The fMRI scans will be performed within a few minutes of the shower exposure. For blinding, the researchers performing the fMRIs will be unaware of which temperature each participant showered at, and ideally, the researchers analyzing the data (me) would be blinded to which temperatures correspond to the AU values. Lastly, participants will not know the hypothesis or research question, and won’t be exposed to any materials talking about cold shower benefits. The data will be returned in 60 rows, one for each participant, with a corresponding temperature they showered at and an AU value from the fMRI showing immune activation levels.
+
+### *Variables:*
+
+First Variable
+
+My first variable is "**Shower Temperature**" measured in degrees Celsius. This is my independent x measured on a continuous axis.
+
+Second Variable
+
+My second variable is "**Immune Response**" measured in A.U. from the BOLD signal of an fMRI. This is my dependent y, also measured on a continuous axis.
+
+### *Sample size:*
+
+60
+
+### *Sample size justification:*
+
+Due to the need for human participants to voluntarily and regularly subject themselves to cold showers for this experiment, for ethical and funding reasons, it didn’t make sense to have a large sample size of 100. However, due to the central limit theorem, 30-50 would have been too small of a sample size and may have created an artificially high p-value with insufficient power. Because I am testing on a continuous axis of shower temperature, a sample size of 60 sufficiently covers the range of temperatures while being a realistic number of humans to participate in the study. Lastly, I may have started with a higher number (70, for example), but participants could have left halfway through the study, so they would not be counted.
+
+------------------------------------------------------------------------
+
+```{r Section5 instructions, include=FALSE}
+
+#Primary statistical analysis: Name the analysis you included on the survey form. In the next line, include a brief justification as to why this test is appropriate.
+
+```
+
+# [Data Analysis Plan]{.underline}
+
+I chose a linear regression because both my dependent and independent variables are continuous, and I was thus left with either a correlation or regression. Just due to the fact that I have dependent and independent variables, in that immuneResponse depends on the showerTemperature (they aren’t codependent), means that a regression is necessary. Since I am modeling how my dependent y changes over an independent x, both of which are continuous, a linear regression was the only appropriate test. The immune response changes as a function of the temperature of the shower on a continuous axis, but the temperature of the shower cannot change due to the immune response measured in the brain, which thus defines my variables and makes a linear regression necessary instead of a correlation.
+
+------------------------------------------------------------------------
+
+```{r Section6 instructions, include=FALSE}
+
+#Assumptions and Exploratory Data Analysis (EDA): List the assumptions of your chosen test here.
+
+#Enter your code for all testing of assumptions and figures for EDA in the next code block. This will include reading in your data and making it tidy. You should also display the top of your data table - head(). Any figures you make or statistics your code creates should be labeled appropriately. It should be understandable to someone that does not have access to read your code.
+
+#After the code block, write a paragraph discussing your EDA results and if you had to do anything regarding outliers or data transformations. Remember to justify all of your decisions in writing.
+
+```
+
+# [Assumptions and Exploratory Data Analysis (EDA)]{.underline}
+
+My assumptions are that the data is normal, specifically the residuals of the resulting linear model. That means I am testing the normality of each observation away from its own mean; I thus am also assuming that the data needs no more transformations or outliers to be removed; that the data is not skewed, and that any skew from either group has been removed (assuming the data of showerTemperature and immuneResponse are normal). Lastly, I am assuming that there are no pseudo-replicates: that each new row of my tidy table is a new participant, or different experimental unit. The main assumption though is the normality of the residuals.
+
+```{r Section6 STUDENT CODE BLOCK1, attr.source='.numberLines', include=TRUE}
+#USE THIS BLOCK TO INPUT NECESSARY CODE.
+library(tidyverse)
+# Read the data from the CSV file.
+data<-read.csv(file = "zalibhai.csv")
+data # Call the object variable of my data
+head(data) # Preview the top of my data
+HistogramTemp<-ggplot(data = data, mapping = aes(x = showerTemperature)) +
+  geom_histogram(binwidth = 6)
+HistogramTemp # Graphng the histogram of my temperature group
+HistogramImmune<-ggplot(data = data, mapping = aes(x = immuneResponse)) +
+  geom_histogram(binwidth = 60)
+HistogramImmune # Graphng the histogram of my immune group
+# This is technically redundant but included for thoroughness
+# Since I will also be testing the residuals of the LM
+kstest_temp<-ks.test(data$showerTemperature,"pnorm",mean(data$showerTemperature),sd(data$showerTemperature))
+kstest_temp # Testing normality of temperature group
+kstest_immune<-ks.test(data$immuneResponse,"pnorm",mean(data$immuneResponse),sd(data$immuneResponse))
+kstest_immune # Testing normality of immune group
+# By running additional tests for normality on the groups, we are decreasing Type II error 
+#(the probability of accepting a false null when the null is in fact false)
+# And proving that each group has a normal distribution
+# But we are also increasing Type I error (the probability of rejecting the null when the null is in fact true)
+# Since we may have gotten a smaller p-value from either of the individual tests 
+# We can just test the residuals of the linear model for normality
+# Since it's the distance of each observation from its own group's mean
+# When the model is using more than one mean, it is best to test the residuals instead of separately
+# Because more normality tests means a greater likelihood that one of those groups will randomly not be normal
+# Even though they should meet the assumption of normality based on the residuals distances of the LM
+		
+Model1<-lm(immuneResponse ~ showerTemperature, data = data)
+# Create a linear model of my data where my Y changes over a variable X.
+Model1 # Call the object of my lm
+# Find Cooks Distance of the linear model
+cooks.distance(Model1)
+# Find the maximum Cooks Distance for a possible outlier
+which.max(cooks.distance(Model1))
+# Graph the histogram of my residuals with a binwidth of my sample size
+Histogram1<-ggplot(data = Model1, mapping = aes(x = Model1$residuals)) +
+  geom_histogram(binwidth = 60)
+Histogram1 # Call the object of my histogram
+kstest_result<-ks.test(Model1$residuals,"pnorm",mean(Model1$residuals),sd(Model1$residuals))
+# Create a KS Test on the residuals of my linear model for a normal distribution
+# Calling the mean and standard deviation on my residuals too
+kstest_result # Call the KS Test object
+```
+
+### *Interpretation of EDA:*
+
+The exploratory data analysis shows that both my individual groups -- showerTemperature and immuneResponse were normal, and the residuals of my linear model are also normal. We want to test both that there is no skew in either column; and more importantly, the former is technically redundant because testing the residuals of the linear model for normality shows that: the distances of each observation from its own mean are normal. 
+The Histograms graphing the two variables and the residuals with a binwidth equal to my sample size shows 3 very normal bell curves that pass the eyeball test, and the KS Test of the same shows that the data are also normal, as both groups have a p-value of about 0.9, and the residuals have a p-value of 0.6, which is greater than the alpha value 0.05. Since the residuals of my data are normal, and I can confirm my assumptions from the exploratory data analysis of my linear regression, I can proceed with testing the null hypothesis. 
+
+------------------------------------------------------------------------
+
+```{r Section7 instructions, include=FALSE}
+
+#Primary Statistical Analysis: In the next code block, you will conduct your primary statistical test and any necessary post-hoc tests. Do NOT include your own written interpretation here.
+
+```
+
+# [Primary Statistical Analysis]{.underline}
+
+```{r Section7 STUDENT CODE BLOCK2, attr.source='.numberLines', include=TRUE}
+#USE THIS BLOCK TO INPUT NECESSARY CODE.
+# Run a summary of the linear model to get an F-statistic, R-value, etc.
+summary<-summary(Model1)
+summary
+```
+
+
+------------------------------------------------------------------------
+
+```{r Section8 instructions, include=FALSE}
+
+#Primary Figure: In the next code block, you will create a single well-designed figure in ggplot that will clearly show a reader patterns in your data.
+
+```
+
+# [Data Visualization]{.underline}
+
+```{r Section8 STUDENT CODE BLOCK4, attr.source='.numberLines', include=TRUE}
+#USE THIS BLOCK TO INPUT NECESSARY CODE.
+plot1<-ggplot(data=data,mapping=aes(x=showerTemperature,y=immuneResponse))+ #plotting my x and y axis
+  theme_classic() + #classic theme
+  coord_cartesian(ylim=c(800,1150),xlim=c(18,36)) + #setting limits for x and y
+  theme(axis.text=element_text(size=12)) + #increasing axes title sizes
+  xlab("Shower Temperature (Celsius)") + #x-axis label
+  ylab("Immune Response (A.U.)") + #y-axis label
+  geom_point(size=2) + #increasing size of the points
+  geom_smooth(method = lm,color="navy",fill="blue") #trend line of the linear model
+plot1  
+```
+
+------------------------------------------------------------------------
+
+```{r Section9 instructions, include=FALSE}
+
+#Conclusions: This is the section where you will use what you have learned in this course to make conclusions based on your results. What patterns/differences do you see in your data? How certain/uncertain are you in those results. THIS IS ONE OF THE MOST IMPORTANT SECTIONS OF THE TERM PROJECT. Demonstrate to us that you understand what your results can and cannot tell you. Make it as long as you need to.
+
+#Future Directions: Are there any confounding variables that your data/experimental design did not include? Briefly discuss what you would do differently if there were no restrictions placed on your design, aside from ethical and reasonable logistic considerations.
+
+#Citations
+
+```
+
+# [Conclusions]{.underline}
+
+Based on the statistical results of this linear regression, I can conclude that the null hypothesis was false, and that there is ultimately a significant relationship between lower shower temperatures and higher immune response. My p-value from the f-statistic was 0.0008629, which is much less than the alpha value threshold of 0.05. This is sufficient to reject the null – that there is no difference between cold and hot temperatures for immune response. We can thus accept the alternate hypothesis, that colder showers do activate immune responses differently than showers at warmer temperatures. Furthermore, we can present the linear model of how they are different, where:
+`immuneResponse = -7.126(showerTemperature) + 1205.801` 
+shows that there is a negative correlational (here, it is regression) coefficient (rho), with a value of negative -7.126. 
+
+Thus, as shower temperature increases in our linear model, immune response decreases, and vice versa. As shower temperature decreases and participants take colder showers, immune response levels actually increase to the slope of about 7 times the temperature variable. So, this means that for each degree Celsius decrease in shower temperature, the immune response increases by approximately 7.126 arbitrary units AU) on an fMRI. Theoretically, this would support the idea that cold showers stimulate neurobiological immune responses.
+
+We can see from the t-value of -3.514, how far the estimated slope coefficient (-7) is from zero in terms of Standard Error, that the direction of the relationship is inverse; the significance is that  there is only about a 0.086% probability of observing a relationship (t) this strong (or stronger) if in fact the null was true and there is no relationship between shower temperature and immune response. When calculating the variance in a regression model, here we reject the null and the predicted values of y are NOT equal to the mean of y. The sums of the squared deviations between the observed and predicted values, all over the degrees of freedom give us this.
+
+Furthermore, the summary of the model’s variance shows that we have an R-squared value of 0.1755, which means that shower temperature on its own explains about 17.55% of the variation in immune response. While it isn’t inherently an extremely high number, given the biological context where there could be multiple confounding factors and variables that affect immune response in our measured areas, this is extremely impressive that shower temperature accounts for so much of the variance. 
+We also got an F-statistic of 12.35, which can be thought of as a signal-to-noise ratio of the explained variance over the unexplained residuals; since the explained variance is 12.35 times greater than what would be expected by random chance, this relates to how the 17.5% variance is unlikely to occur randomly. Thus, we can have a high certainty in the results of the data considering this F score.
+
+All of this is supported by the scatterplot visualization, where we see that the regression line has a downward slope from left to right as temperature increases and immune response decreases. Since this study used human participants, all of the variation and scatter around the line is expected, and the blue shaded region for the trend line and confidence interval is narrow, which is supported by how our summary statistic shows we got a very low standard error of about 2 degrees, and the residual standard error was about 63 AU (out of a mean of 1000); due to unequal variance, degrees of freedom should be just under 58 (two degrees lost for intercept and slope parameters). These are the main patterns seen from the data.
+
+Therefore, the results of the model supports that cold exposure triggers neurobiological pathways that activate immune regions in the brain, where the colder the shower temperature is, the more activation/luminosity is measured on an fMRI in AU (from the BOLD signal). It also would explain why participants in the original study reported fewer sick days/absences from work without actually having less illnesses. 
+The cold showers don’t prevent illness, but it affects how people perceive their feeling sick via brain processes, and strengthens the immune system to fight the illness so that the symptoms will be mitigated and they feel less like they need to skip work. Lastly, from the background, it does seem that a mild stressor like cold water – and importantly, how strong that stressor is in terms of how low the temperature is – creates a beneficial effect on activating the immune system more in the brain (the hypothalamus for the purposes of this study).
+
+In terms of future directions of research, for any human trial, there will be confounding factors, like the biology of each participant in terms of age, sex, pre-existing conditions, and previous regular cold exposure, which we would have attempted to control for in selection. Also, knowing that they are in a study might have psychological factors, like expectations affecting the activity of those immune brain regions, as well as human anxieties during the process. Lastly, while we would attempt to control for it, there would probably be environmental factors like the time of day, season, and temperature; the study would have to be reproduced with similar results also rejecting the null to be more certain. 
+
+Some design improvements that I’d make would be a longer study duration to see if participants adapted to the cold water, and to see if time-series data made any difference in the results. We could also measure different regions of the brain that are also part of the sympathetic nervous system, and take different measurements than AU values, which in real life can have much more variation. Lastly, a future direction might be to measure stress hormone or cortisol levels at the same time as immune response, to see if the theory about the hormesis pathway is true and if there is any correlation between stress levels and immune response.
+
+------------------------------------------------------------------------
+
+# [Citations]{.underline}
+
+Andrușca, A., & McLaren, N. (2023, August 16). Neural pathways. Kenhub. https://www.kenhub.com/en/library/anatomy/neural-pathways 
+
+Buijze GA, Sierevelt IN, van der Heijden BCJM, Dijkgraaf MG, Frings-Dresen MHW (2016). The Effect of Cold Showering on Health and Work: A Randomized Controlled Trial. PLoS ONE 11(9): e0161749. doi:10.1371/journal.pone.0161749
+
+Mattson M. P. (2008). Hormesis defined. Ageing research reviews, 7(1), 1–7. https://doi.org/10.1016/j.arr.2007.08.007
+
+Soto-Tinoco, E., Guerrero-Vargas, N. N., & Buijs, R. M. (2016). Interaction between the hypothalamus and the immune system. Experimental physiology, 101(12), 1463–1471. https://doi.org/10.1113/EP085560

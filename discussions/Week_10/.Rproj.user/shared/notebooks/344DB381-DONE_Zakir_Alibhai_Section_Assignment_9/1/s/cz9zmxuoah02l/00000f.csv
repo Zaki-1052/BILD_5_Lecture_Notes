@@ -1,0 +1,5 @@
+"0","Model1<-lm(tumorSize ~ miceGroup, data = MiceData)"
+"0","#MiceData2<- WideData |> mutate(delta = WideData$DownRegulated - WideData$Control)"
+"0","Histogram1<-ggplot(data = Model1, mapping = aes(x = Model1$residuals)) +"
+"0","  geom_histogram(binwidth = 1)"
+"0","Histogram1"

@@ -1,0 +1,7 @@
+"0",""
+"0","#Assumptions and Exploratory Data Analysis (EDA): List the assumptions of your chosen test here."
+"0",""
+"0","#Enter your code for all testing of assumptions and figures for EDA in the next code block. This will include reading in your data and making it tidy. You should also display the top of your data table - head(). Any figures you make or statistics your code creates should be labeled appropriately. It should be understandable to someone that does not have access to read your code."
+"0",""
+"0","#After the code block, write a paragraph discussing your EDA results and if you had to do anything regarding outliers or data transformations. Remember to justify all of your decisions in writing."
+"0",""

@@ -1,3 +1,0 @@
-"0","WideData<-read.csv(file = ""Week9Mice.csv"")"
-"0","MiceData<-pivot_longer(WideData, cols = 1:2, names_to = ""miceGroup"", values_to = ""tumorSize"")"
-"0","head(MiceData)  "
